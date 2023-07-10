@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Jogo Da Velha</title>
+    </head>
+    <body id="turno-jogador-1">
+        <header>
+            <div id="nome-jogador"></div>
+            <div id="pontos-jogador"></div>
+        </header>
+        <main>
+            <div id="login">
+                <div id="login-jogador-1">
+                    <h1>JOGADOR 1</h1>
+                    <input type="text" id="jogador-1-nome" placeholder="nickname">
+                    <div id="jogador-1-botoes">
+                        <button id="jogador-1-botao-salvar">SALVAR</button>
+                        <button id="jogador-1-botao-buscar">BUSCAR</button>
+                    </div>
+                </div>
+                <div id="login-jogador-2">
+                    <h1>JOGADOR 2</h1>
+                    <input type="text" id="jogador-2-nome" placeholder="nickname">
+                    <div id="jogador-2-botoes">
+                        <button id="jogador-2-botao-salvar">SALVAR</button>
+                        <button id="jogador-2-botao-buscar">BUSCAR</button> 
+                    </div>
+                </div>
+            </div>
+            <div id="tela-vitoria">
+                <div id="tela">
+                    <h1 id="vencedor"></h1>
+                    <div id="botoes-vitoria">
+                        <button id="botao-trocar">TROCAR</button>
+                        <button id="botao-voltar">VOLTAR</button>
+                    </div>
+                </div>
+            </div>
+            <div id="jogo">
+                <div class="coluna">
+                    <div><button value="0-0" class="botoes-jogo"></button></div>
+                    <div class="meio"><button value="0-1" class="botoes-jogo"></button></div>
+                    <div><button value="0-2" class="botoes-jogo"></button></div>
+                </div>
+                <div class="coluna" id="coluna-meio">
+                    <div><button value="1-0" class="botoes-jogo"></button></div>
+                    <div class="meio"><button value="1-1" class="botoes-jogo"></button></div>
+                    <div><button value="1-2" class="botoes-jogo"></button></div>
+                </div>
+                <div class="coluna">
+                    <div><button value="2-0" class="botoes-jogo"></button></div>
+                    <div class="meio"><button value="2-1" class="botoes-jogo"></button></div>
+                    <div><button value="2-2" class="botoes-jogo"></button></div>
+                </div>
+            </div>
+        </main>
+        <script src="./script.js" type="module"></script>
+    </body>
+</html>

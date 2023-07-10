@@ -1,0 +1,219 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#turno-jogador-1{
+    background-color: #333333;
+}
+
+#turno-jogador-2{
+    background-color: #cccccc;
+}
+
+#tela-login{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 70%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+    opacity: 1;
+}
+
+#login-jogador-1, #login-jogador-2{
+    width: 60%;
+    height: 30%;
+    border-radius: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+    padding: 1em;
+}
+
+input{
+    border: none;
+    height: 3em;
+    width: 15em;
+    border-radius: 2em;
+    text-align: center;
+}
+
+input::placeholder{
+    text-align: center;
+    font-size: 1.2em;
+}
+
+button{
+    height: 4em;
+    width: 7em;
+    border: none;
+    border-radius: 2em;
+    font-weight: bolder;
+}
+
+#login-jogador-1{
+    background-color: #333333
+}
+
+#login-jogador-2{
+    background-color: #cccccc;
+}
+
+#login-jogador-1 h1{
+    color: #cccccc;
+}
+
+#login-jogador-2 h1{
+    color: #333333;
+}
+
+#login-jogador-1 form input{
+    border: 3px #cccccc solid;
+}
+
+#login-jogador-2 form input{
+    border: 3px #333333 solid;
+}
+
+#botoes-jogador-1, #botoes-jogador-2{
+    display: flex;
+    gap: 1em;
+}
+
+#botoes-jogador-1 button{
+    background-color: #cccccc;
+    color: #333333;
+}
+
+#botoes-jogador-2 button{
+    background-color: #333333;
+    color: #cccccc;
+}
+
+#tela-vitoria{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 70%);
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+#tela{
+    width: 60%;
+    height: 20%;
+    background-color: #333333;
+    border-radius: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+}
+
+#vencedor{
+    color: #cccccc;
+}
+
+#botoes-vitoria button{
+    background-color: #cccccc;
+    color: #333333;
+}
+
+#tela-jogo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+}
+
+#titulo-jogo{
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#turno-jogador-1 #titulo-jogo{
+    color: #cccccc;
+}
+
+#turno-jogador-2 #titulo-jogo{
+    color: #333333;
+}
+
+#jogo{
+    display: flex;
+    width: 21em;
+    height: 21em;
+    align-items: center;
+    justify-content: center;
+    padding: 4em;
+}
+
+.coluna{
+    height: 21em;
+    width: 7em;
+}
+
+#turno-jogador-1 #coluna-meio{
+    border-left: 0.3em #cccccc solid;
+    border-right: 0.3em #cccccc solid;
+}
+
+#turno-jogador-2 #coluna-meio{
+    border-left: 0.3em #333333 solid;
+    border-right: 0.3em #333333 solid;
+}
+
+#turno-jogador-1 .linha-meio{
+    border-bottom: 0.3em #cccccc solid;
+    border-top: 0.3em #cccccc solid;
+}
+
+#turno-jogador-2 .linha-meio{
+    border-bottom: 0.3em #333333 solid;
+    border-top: 0.3em #333333 solid;
+}
+
+.coluna div{
+    width: 100%;
+    height: 7em;
+}
+
+.botoes-jogo{
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    background-color: rgba( 0, 0, 0, 0);
+    font-size: 3em;
+}
+
+#turno-jogador-1 .botoes-jogo{
+    color: #cccccc
+}
+
+#turno-jogador-2 .botoes-jogo{
+    color: #333333
+}
